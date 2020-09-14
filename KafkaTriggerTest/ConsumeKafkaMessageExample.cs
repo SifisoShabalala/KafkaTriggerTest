@@ -20,11 +20,11 @@ namespace KafkaTriggerTest
             Protocol = BrokerProtocol.SaslSsl, 
             AuthenticationMode = BrokerAuthenticationMode.Plain,
             ConsumerGroup = "KAFKA_CONSUMER_EXAMPLE",
-            Username = "avnadmin",
+            Username = "",
             SslCaLocation = "ca.pem",
             SslCertificateLocation = "service.cert",
             SslKeyLocation = "service.key",
-            Password = "v84gp12ojyz8brnp")] KafkaEventData<string> message,
+            Password = "")] KafkaEventData<string> message,
             ILogger log)
         {
             log.LogInformation(message.Value);
